@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://inv1nc.github.io/sitemap.xml

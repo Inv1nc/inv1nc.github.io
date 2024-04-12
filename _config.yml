@@ -71,7 +71,7 @@ minima:
   #  - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
 
 
-google_analytics: G-BXV0XHL9FK
+# google_analytics:
 
 include:
   - _pages

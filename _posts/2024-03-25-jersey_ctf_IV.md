@@ -1,13 +1,13 @@
 ---
-title: JerseyCTF IV Writeups
+title: JerseyCTF IV Writeup
 layout: post
 date: 2024-03-25
-permalink: jerseyctf-2024-writeups
+permalink: jerseyctf-2024-writeup
 category: ctf writeups
 author: Inv1nc
 ---
 
-![](/assets/images/24032501.png)
+![](/assets/images/2024/24032501.png)
 
 ## OSINT
 
@@ -18,7 +18,7 @@ author: Inv1nc
 I received this note with this code. Enclosed with it, it asked for help finding a specific US Navy ship that was linked to this code. Can you decipher this code to give me the name of this US Navy ship and the type of ship it was with its associated number?  
 Flag Format : `jctf{USS_Name_Of_Ship_TypeOfShip_Number}`  
 
-![](/assets/images/24032502.png)
+![](/assets/images/2024/24032502.png)
 
 #### Solution : 
   - Quickly searched the image over the internet.
@@ -55,7 +55,7 @@ echo "{idwh-ri-wkh-zhe}" | tr 'a-z' 'x-za-w'
 
 ### Internal Tensions
 
-![](/assets/images/24032503.png)
+![](/assets/images/2024/24032503.png)
 
 #### Solution : 
   - Get Over to Internet Archive and searched the jerseyctf.com 

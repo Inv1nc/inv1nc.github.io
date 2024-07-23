@@ -52,7 +52,7 @@ npx hardhat play
 3456FDFDFDFDFDFD5B00 // bytecode
 ```
 
-`CALLVALUE` pushes callvalue in wei into the stack.  
+`CALLVALUE` pushes callvalue in wei onto the stack.  
 
 `JUMPDEST` is marked at `0x08` to solve the challenge we need to provide a `CALLVALUE` equal to 8.  
 
@@ -83,9 +83,9 @@ Puzzle solved!
 34380356FDFD5B00FDFD // bytecode
 ```
 
-To successfully jump to JUMPDEST at position 0x06, the top of the stack must equal 6.  
+To successfully jump to JUMPDEST at position `0x06`, the top of the stack must equal 6.  
 
-`CODESIZE` is `10` (since the bytecode is 20 hex characters, which is 10 bytes).  
+`CODESIZE` is 10 (since the bytecode is 20 hex characters, which is 10 bytes).  
 
 ```python
 len("34380356FDFD5B00FDFD")/2	#10
@@ -162,10 +162,10 @@ Puzzle solved!
 To solve the challenge, the result of CODESIZE XOR CALLVALUE must be `0x0A`.  
 
 ```
-	  1100 (12)
-XOR   1010 (0x0A)
+	1100 (12)
+XOR	1010 (0x0A)
 ----------------
-      0110 (6)
+	0110 (6)
 ```
 
 
@@ -277,7 +277,7 @@ To solve the challenge, the we needs to create a valid contract whose size is 1 
 
 The runtime code is the code that is returned from the contract creation code.  
 
-Return data is taken from memory, so push one bye into memory
+Return data is taken from memory, so push one byte into memory
 
 ```
 push1 01 - push 0x01 into stack
@@ -333,7 +333,7 @@ From `0B` to `13` it call the contract that was created with the calldata.
 
 To solve the return data of the called contract must be equal to zero.  
 
-The contract return zero if any revert happen but wait if also revert the whole execution.  
+The contract return zero if any revert happen but wait it also revert the whole execution.  
 
 For that we need to just return the `REVERT`(FD) opcode.
 
@@ -384,9 +384,9 @@ From `0A` to `10`, we understand the multiplication of CALLDATA and CALLDATASIZE
 
 To solve the challenge,  
 
-If we take CALLDATASIZE of size 4 bytes the CALLDATA must be 2.  
+If we take CALLDATASIZE of size 4 bytes the CALLVALUE must be 2.  
 
-If we take CALLDATASIZE of size 8 bytes the CALLATA must to 1.  
+If we take CALLDATASIZE of size 8 bytes the CALLVALUE must to 1.  
 
 #### Solution
 
